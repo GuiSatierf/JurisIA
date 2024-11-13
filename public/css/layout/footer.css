@@ -1,0 +1,38 @@
+.footer {
+  background: none;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .socials a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 0 8px;
+  transition: color 0.3s, background 0.3s;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradiente no hover dos ícones sociais */
+.footer .socials a:hover {
+  background: linear-gradient(135deg, #A992F7, #8768D3);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: rgba(169, 146, 247, 0.6);
+}

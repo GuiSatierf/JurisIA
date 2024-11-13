@@ -1,0 +1,52 @@
+/* Animações */
+@-webkit-keyframes bounce {
+  100% {
+    top: -5px;
+    text-shadow: 0 1px 0 #ccc;
+  }
+}
+
+@keyframes bounce {
+  100% {
+    top: -5px;
+    text-shadow: 0 1px 0 #ccc;
+  }
+}
+
+/* Emoji Animations */
+@keyframes wow-face {
+  15%, 25% {
+    transform: rotate(20deg) translateX(-25px);
+  }
+  45%, 65% {
+    transform: rotate(-20deg) translateX(25px);
+  }
+  75%, 100% {
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes wow-brow {
+  15%, 65% {
+    top: 25px;
+  }
+  75%, 100%, 0% {
+    top: 15px;
+  }
+}
+
+@keyframes wow-mouth {
+  10%, 30% {
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+  }
+  50%, 70% {
+    width: 30px;
+    height: 40px;
+    left: calc(50% - 15px);
+  }
+  75%, 100% {
+    height: 50px;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juris Secretaria IA</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <div class="content-one">
+            <div class="qrcode-div">
+                <p id="loading-text">Gerando QR Code...</p>
+                <div class="qrcodebox">
+                    <img id="qr-code" alt="QR Code" style="display: none;" />
+                </div>
+            </div>
+            <p class="qr-instructions">
+                Para utilizar a JurisSecIA, conecte-se escaneando o QR Code. Somente após a conexão, você poderá acessar
+                todas as funcionalidades dessa assistente jurídica inteligente.
+            </p>
+        </div>
+        <div class="content-two">
+            <span class="plugin-badge">JURIS SECRETARIA IA</span>
+            <h1>Secretária jurídica<br>24 horas por dia, 7 dias por semana</h1>
+            <p>
+                Maximize a produtividade do seu escritório com uma assistente sempre disponível, apoiando o atendimento
+                aos seus clientes, mesmo em feriados e finais de semana.
+            </p>
+            <button class="figma-button" id="toggle-btn">CONECTAR COM WHATSAPP</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/jurissecretaria/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/jurissecretaria/?viewAsMember=true"><i
+                    class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

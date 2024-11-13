@@ -1,0 +1,12 @@
+#instruction-text {
+    font-size: 0.9em;
+    color: #8A8A8E;
+    margin-top: 15px;
+}
+
+#status-text {
+    font-size: 1.2em;
+    color: #4CAF50; /* Verde para indicar sucesso */
+    margin-top: 15px;
+    display: none;
+}

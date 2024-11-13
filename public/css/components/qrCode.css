@@ -1,0 +1,68 @@
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.qrcode-div {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.qr-instructions {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #888;
+  text-align: center;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.qrcodebox {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#qr-code {
+  display: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+#loading-text {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.connected-icon {
+  font-size: 3em;
+  color: #4CAF50; /* Cor verde */
+}
+
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}

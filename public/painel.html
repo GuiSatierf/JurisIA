@@ -1,0 +1,66 @@
+<!-- painel.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Controle</title>
+  <link rel="stylesheet" href="css/layout/painel.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <div class="panel-container">
+    <!-- Coluna de chats (à esquerda) -->
+    <div class="chat-list">
+      <h2>Conversas</h2>
+      <!-- Os itens de chat serão adicionados dinamicamente aqui -->
+    </div>
+
+    <!-- Área de exibição de mensagens (à direita) -->
+    <div class="message-display" id="message-display">
+      <div class="header-right">
+        <h1>Painel de Controle do Chat</h1>
+        <p>Status: <span id="status-text">Running</span></p>
+      </div>
+      <div id="message-content">
+        <!-- Mensagens do cliente serão carregadas aqui -->
+      </div>
+
+      <!-- Campo de entrada e botão de enviar -->
+      <div class="message-input-container">
+        <input
+          type="text"
+          placeholder="Digite sua mensagem..."
+          class="message-input"
+          id="message-input"
+        />
+        <button id="send-message-btn">
+          <i class="bi bi-send-fill"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botões de ação -->
+  <div class="button-container">
+    <button id="pause-btn"><i class="bi bi-pause-fill"></i> Pausar Chat</button>
+    <button id="resume-btn"><i class="bi bi-play-fill"></i> Continuar Chat</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/SocketManager.js"></script>
+  <script src="/js/messageHandler.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* Estilos para o Conteúdo Principal */
+.main-content {
+  position: absolute;
+}
+
+.content-one,
+.content-two {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.content-one.active,
+.content-two.active {
+  opacity: 1;
+}
+
+.content-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+.content-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Estilo do Título na Content Two */
+.content-two h1 {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Estilo do Parágrafo na Content Two */
+.content-two p {
+  font-size: 1.2em;
+  color: #888;
+  margin: 15px auto 30px;
+  line-height: 1.5;
+  width: 70%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+}

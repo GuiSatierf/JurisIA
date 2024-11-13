@@ -1,0 +1,12 @@
+
+.plugin-badge {
+    background-color: #333;
+    color: #A992F7;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.0em;
+  }
+  

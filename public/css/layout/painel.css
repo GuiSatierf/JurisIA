@@ -1,0 +1,214 @@
+/* painel.css */
+
+/* Configurações globais */
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ajuste para exibir o painel e os botões de ação */
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Ajuste para permitir rolagem se o conteúdo exceder a altura */
+  body {
+    overflow: hidden;
+  }
+  
+  .panel-container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #1e1e1e;
+    margin-top: 20px; /* Espaço entre o topo e o painel */
+  }
+  
+  /* Lista de Chats */
+  .chat-list {
+    width: 30%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .chat-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #a3a3a3;
+  }
+  
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .chat-item:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .chat-item.active {
+    background-color: #3a3a3a;
+    border-left: 4px solid #4caf50;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #4caf50; /* Borda de destaque */
+  }
+  
+  .chat-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
+  
+  .chat-last-message {
+    font-size: 0.9em;
+    color: #a3a3a3;
+  }
+  
+  /* Área de Exibição de Mensagens */
+  .message-display {
+    width: 70%;
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .header-right h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .header-right p {
+    font-size: 1em;
+    color: #4caf50;
+  }
+  
+  #status-text {
+    font-weight: bold;
+  }
+  
+  /* Estilo das Mensagens */
+  .message {
+    max-width: 60%;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .client-message {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  
+  .agent-message {
+    align-self: flex-end;
+    background-color: #4caf50;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .message-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Campo de entrada e botão de enviar */
+  .message-input-container {
+    display: flex;
+    margin-top: auto; /* Coloca no final da área de mensagens */
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #3a3a3a;
+    color: #fff;
+  }
+  
+  #send-message-btn {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #send-message-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Botões de Ação */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  #pause-btn {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  #pause-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  #resume-btn {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  #resume-btn:hover {
+    background-color: #4cae4c;
+  }
+  
